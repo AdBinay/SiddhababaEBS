@@ -1,11 +1,19 @@
-
-import React from 'react';
+import React, {useState , useEffect} from 'react';
 import { Link } from 'react-router-dom';
-import notices from '../notice';
 import { Row, Col, Card, Image } from 'react-bootstrap';
+import axios from 'axios'
 // import Notice from '../components/Notice';
 
 function NewsHomeScreen() {
+  const [notices, setNotices] = useState([])
+  useEffect(() =>{
+    async function fetchNotices(){
+      const { data } = await axios.get('/api/notices/')
+      setNotices(data)
+    }
+    fetchNotices()
+  },[])
+
   return (
     <div>
       <h1>Latest Notice</h1> <br/>

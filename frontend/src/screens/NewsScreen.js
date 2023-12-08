@@ -1,23 +1,35 @@
-import { Link } from 'react-router-dom'
-import {Row, Col, Image, ListGroup, Button, Card } from 'react-bootstrap' 
-import React from 'react';
+import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
+import { Row, Col, Image, ListGroup } from 'react-bootstrap';
+import axios from 'axios';
 import { useParams } from 'react-router-dom';
-import notices from '../notice';
 
 function NewsScreen() {
-  const { _id } = useParams();
-  const notice = notices.find((n) => n._id === _id);
+  const { _id } = useParams(); // Using useParams hook to get the id from URL
 
-  if (!notice) {
-    return <div>Notice not found</div>;
-  }
+  const [notice, setNotice] = useState({});
+
+  useEffect(() => {
+    async function fetchNotice() {
+      try {
+        const { data } = await axios.get(`/api/notices/${_id}`);
+        setNotice(data);
+      } catch (error) {
+        // Handle error (e.g., log or show error message)
+        console.error('Error fetching notice:', error);
+      }
+    }
+    fetchNotice();
+  }, [_id]); // Adding id to dependency array to fetch notice when id changes
 
   return (
     <div>
-      <Link to='/notice' className='btn btn-success my-3'>GO Back</Link>
+      <Link to='/notice' className='btn btn-success my-3'>
+        GO Back
+      </Link>
       <Row>
         <Col md={6}>
-          <Image src={notice.image} alt={notice.title} fluid/>
+          <Image src={notice.image} alt={notice.title} fluid />
         </Col>
         <Col md={6}>
           <ListGroup variant='flush'>
