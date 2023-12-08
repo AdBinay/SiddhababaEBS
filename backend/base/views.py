@@ -21,5 +21,18 @@ def getRoutes(request):
     ]
     return Response(routes)
 
+
+@api_view(['GET'])
 def getnotices(request):
-    return JsonResponse(notices, safe=False)
+    return Response(notices)
+
+@api_view(['GET'])
+def getnotice(request, pk):
+    notice = None
+    for i in notices:
+        if i['_id'] == pk:
+            notice = i
+            break
+
+
+    return Response(notice)
