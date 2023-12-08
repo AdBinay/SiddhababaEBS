@@ -19,10 +19,10 @@ function Header() {
                 <Nav.Link ><i className='fa fa-bell'></i> Notice</Nav.Link>
               </LinkContainer>
               <LinkContainer to='/gallery'>
-                <Nav.Link ><i class="fa-solid fa-image"></i> Gallery</Nav.Link>
+                <Nav.Link ><i className="fa-solid fa-image"></i> Gallery</Nav.Link>
               </LinkContainer>
               <LinkContainer to='/login'>
-                <Nav.Link ><i class="fa-solid fa-user"></i> Login</Nav.Link>
+                <Nav.Link ><i className="fa-solid fa-user"></i> Login</Nav.Link>
               </LinkContainer>
             </Nav>
           </Navbar.Collapse>
