@@ -33,11 +33,6 @@ def getnotices(request):
 
 @api_view(['GET'])
 def getnotice(request, pk):
-    notices = None
-    for i in notices:
-        if i['_id'] == pk:
-            notice = i
-            break
-
-
-    return Response(notices)
+    notices = Notice.objects.get(_id=pk)
+    serializer = NoticeSerializer(notices, many = False)
+    return Response(serializer.data)

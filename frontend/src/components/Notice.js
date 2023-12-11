@@ -5,12 +5,12 @@ import { Link } from 'react-router-dom'
 export default function Notice({ notice }) {
   return (
     <Card className='my-3 p-3 rounded'>
-        <Link to={`/notice/${notice._id}`} >
+        <Link to={`/notices/${notice._id}`} >
             <Card.Img src={notice.image}></Card.Img>
         </Link>
 
         <Card.Body>
-            <Link to={`/notice/${notice._id}`} >
+            <Link to={`/notices/${notice._id}`} >
                 <Card.Title as= "div">
                     <strong>{ notice.title}</strong>
                 </Card.Title>

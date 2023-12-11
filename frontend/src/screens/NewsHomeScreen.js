@@ -32,7 +32,7 @@ function NewsHomeScreen() {
                 {notice.description.length > 20 ? (
                   <span>
                     {`${notice.description.slice(0, 50)}... `}
-                    <Link to={`/notice/${notice._id}`} ><b> Read more..</b></Link>
+                    <Link to={`/notices/${notice._id}`} ><b> Read more..</b></Link>
                   </span>
                 ) : (
                   notice.description

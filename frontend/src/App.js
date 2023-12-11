@@ -14,8 +14,8 @@ function App() {
           <Container>
           <Routes>
             <Route path='/' element={<HomeScreen />} exact/>
-            <Route path='/notice/' element={<NewsHomeScreen />} />
-            <Route path='/notice/:_id' element={<NewsScreen />} />
+            <Route path='/notices/' element={<NewsHomeScreen />} />
+            <Route path='/notices/:_id' element={<NewsScreen />} />
           </Routes>
           </Container>
         </main>

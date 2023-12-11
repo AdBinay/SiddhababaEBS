@@ -24,7 +24,7 @@ function NewsScreen() {
 
   return (
     <div>
-      <Link to='/notice' className='btn btn-success my-3'>
+      <Link to='/notices' className='btn btn-success my-3'>
         GO Back
       </Link>
       <Row>
