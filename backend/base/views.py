@@ -2,7 +2,10 @@ from django.shortcuts import render
 from django.http import JsonResponse
 from rest_framework.decorators import api_view 
 from rest_framework.response import Response
+
 from .notice import notices
+from .models import Notice
+from .serializers import NoticeSerializer
 # Create your views here.
 
 @api_view(['GET'])
@@ -24,15 +27,17 @@ def getRoutes(request):
 
 @api_view(['GET'])
 def getnotices(request):
-    return Response(notices)
+    notices = Notice.objects.all()
+    serializer = NoticeSerializer(notices, many = True)
+    return Response(serializer.data)
 
 @api_view(['GET'])
 def getnotice(request, pk):
-    notice = None
+    notices = None
     for i in notices:
         if i['_id'] == pk:
             notice = i
             break
 
 
-    return Response(notice)
+    return Response(notices)
