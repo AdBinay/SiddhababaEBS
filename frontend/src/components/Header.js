@@ -21,9 +21,9 @@ function Header() {
               <LinkContainer to='/gallery'>
                 <Nav.Link ><i className="fa-solid fa-image"></i> Gallery</Nav.Link>
               </LinkContainer>
-              <LinkContainer to='/login'>
+              {/* <LinkContainer to='/login'>
                 <Nav.Link ><i className="fa-solid fa-user"></i> Login</Nav.Link>
-              </LinkContainer>
+              </LinkContainer> */}
             </Nav>
           </Navbar.Collapse>
         </Container>
