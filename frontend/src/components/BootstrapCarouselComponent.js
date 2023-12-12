@@ -47,7 +47,7 @@ class BootstrapCarouselComponent extends React.Component {
                                 <Carousel.Item>
                                     <img
                                         className="d-block w-100"
-                                        src="https://source.unsplash.com/500×300/?city"                                       
+                                        src="https://source.unsplash.com/500×300/?random"                                       
                                         alt="Third slide"
                                     />
                                     <Carousel.Caption>
