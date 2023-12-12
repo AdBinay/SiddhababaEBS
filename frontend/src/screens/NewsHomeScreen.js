@@ -39,8 +39,6 @@ function NewsHomeScreen() {
                 )} <br/>
                 post on : {notice.date_published}
               </p>
-              <button type="button" class="btn btn-info">Update Post</button>
-              <button type="button" class="btn btn-danger">Delete Post</button>
             </Card>
           </Col>
         ))}
