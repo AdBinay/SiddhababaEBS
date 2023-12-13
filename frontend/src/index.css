@@ -1,5 +1,14 @@
-
+Header{
+    position: fixed , relative;
+    top: 0;
+    right: 0;
+    left: 0;
+}
 main {
     min-height: 80vh;
     /* background-color: #8e9ee8 ; */
+    position: static;
+    top: 30;
+    right: 0;
+    left: 0;
 }
