@@ -2,7 +2,9 @@
 
 import React from 'react'
 import { LinkContainer } from 'react-router-bootstrap'
-import { Navbar,Nav, Container} from 'react-bootstrap'
+import { Navbar,Nav, Container, Row, Col} from 'react-bootstrap'
+import Form from 'react-bootstrap/Form';
+import Button from 'react-bootstrap/Button';
 
 function Header() {
   return (
@@ -16,7 +18,7 @@ function Header() {
           <Navbar.Collapse id="basic-navbar-nav ">
             <Nav className="mr-auto ">
               <LinkContainer to='/notices'>
-                <Nav.Link ><i className='fa fa-bell'></i> Notice</Nav.Link>
+                <Nav.Link ><i className='fa fa-bell '></i> Notice</Nav.Link>
               </LinkContainer>
               <LinkContainer to='/gallery'>
                 <Nav.Link ><i className="fa-solid fa-image"></i> Gallery</Nav.Link>
@@ -32,6 +34,20 @@ function Header() {
               </LinkContainer>
             </Nav>
           </Navbar.Collapse>
+          <Form inline>
+          <Row>
+            <Col xs="auto">
+              <Form.Control
+                type="text"
+                placeholder="Search"
+                className=" mr-sm-2"
+              />
+            </Col>
+            <Col xs="auto">
+              <Button variant="outline-success" type="submit" >Submit</Button>
+            </Col>
+          </Row>
+          </Form>
         </Container>
       </Navbar>
     </header>
