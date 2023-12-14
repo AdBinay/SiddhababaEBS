@@ -51,7 +51,7 @@ function Header() {
                     />
                   </Col>
                   <Col xs="auto">
-                    <Button variant="outline-success" type="submit" >Submit</Button>
+                    <Button variant="outline-danger" type="submit" >Submit</Button>
                   </Col>
                 </Row>
               </Form>
