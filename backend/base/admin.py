@@ -1,5 +1,5 @@
 from django.contrib import admin
-from . models import Notice
+from . models import Notice, Faculty
 # Register your models here.
 
 class NoticeAdmin(admin.ModelAdmin):
@@ -10,4 +10,5 @@ class NoticeAdmin(admin.ModelAdmin):
  
 
 admin.site.register(Notice, NoticeAdmin)
+admin.site.register(Faculty)
 
