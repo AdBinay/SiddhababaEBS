@@ -5,6 +5,7 @@ import Footer from './components/Footer';
 import NewsHomeScreen from './screens/NewsHomeScreen'
 import NewsScreen from './screens/NewsScreen'
 import HomeScreen from './screens/HomeScreen'
+import FacultyScreen from './screens/FacultyScreen'
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
               <Route path='/' element={<HomeScreen />} exact/>
               <Route path='/notices/' element={<NewsHomeScreen />} />
               <Route path='/notices/:_id' element={<NewsScreen />} />
+              <Route path='/faculty/' element={<FacultyScreen />} />
             </Routes>
           </Container>
         </main>
