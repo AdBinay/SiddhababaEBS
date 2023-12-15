@@ -53,7 +53,7 @@ const Footer = () => {
 						<FooterLink href="#">
 							Testimonials
 						</FooterLink>
-						<FooterLink href="#">
+						<FooterLink href="/faculty">
 							Teaching Faculty
 						</FooterLink>
 					</Column>
