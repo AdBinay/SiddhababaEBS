@@ -16,7 +16,7 @@ function GalleryScreen() {
   return (
     
     <div>
-      <h1>Gallary</h1> <br />
+      <h1>Gallery</h1> <br />
       <Row>
         {gallery.map((gallery) => (
           <Col
