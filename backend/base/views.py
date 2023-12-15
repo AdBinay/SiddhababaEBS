@@ -4,8 +4,8 @@ from rest_framework.decorators import api_view
 from rest_framework.response import Response
 
 from .notice import notices
-from .models import Notice , Faculty
-from .serializers import NoticeSerializer ,FacultySerializer
+from .models import Notice , Faculty , Gallery
+from .serializers import NoticeSerializer ,FacultySerializer, GallerySerializer
 # Create your views here.
 
 @api_view(['GET'])
@@ -15,6 +15,9 @@ def getRoutes(request):
         '/api/notices/<id>/',
 
         '/api/faculty/',
+
+        '/api/gallery/',
+        # '/api/gallery/<id>/',
 
         '/api/notices/delete/<id>/',
         '/api/notices/<update>/<id>/',
@@ -40,3 +43,11 @@ def getfaculty(request):
     faculty = Faculty.objects.all()
     serializer = FacultySerializer(faculty, many = True)
     return Response(serializer.data)
+
+# image in gallery
+@api_view(['GET'])
+def getgallery(request):
+    gallery = Gallery.objects.all()
+    serializer = GallerySerializer(gallery, many = True)
+    return Response(serializer.data)
+

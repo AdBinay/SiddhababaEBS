@@ -1,6 +1,6 @@
 from rest_framework import serializers
 from django.contrib.auth.models import User
-from .models import Notice , Faculty
+from .models import Notice , Faculty , Gallery
 
 class NoticeSerializer(serializers.ModelSerializer):
     class Meta:
@@ -11,4 +11,9 @@ class NoticeSerializer(serializers.ModelSerializer):
 class FacultySerializer(serializers.ModelSerializer):
     class Meta:
         model = Faculty
+        fields = '__all__'
+
+class GallerySerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Gallery
         fields = '__all__'
