@@ -16,7 +16,7 @@ function Header() {
       >
         <Container>
           <LinkContainer to="/">
-            <Navbar.Brand>Siddhababa_EBS</Navbar.Brand>
+            <Navbar.Brand>Siddhababa</Navbar.Brand>
           </LinkContainer>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse
