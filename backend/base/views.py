@@ -4,20 +4,17 @@ from rest_framework.decorators import api_view
 from rest_framework.response import Response
 
 from .notice import notices
-from .models import Notice
-from .serializers import NoticeSerializer
+from .models import Notice , Faculty
+from .serializers import NoticeSerializer ,FacultySerializer
 # Create your views here.
 
 @api_view(['GET'])
 def getRoutes(request):
     routes = [
         '/api/notices/',
-        '/api/notices/create/',
-
-        '/api/notices/upload/',
-
-        '/api/notices/top/',
         '/api/notices/<id>/',
+
+        '/api/faculty/',
 
         '/api/notices/delete/<id>/',
         '/api/notices/<update>/<id>/',
@@ -35,4 +32,11 @@ def getnotices(request):
 def getnotice(request, pk):
     notices = Notice.objects.get(_id=pk)
     serializer = NoticeSerializer(notices, many = False)
+    return Response(serializer.data)
+
+
+@api_view(['GET'])
+def getfaculty(request):
+    faculty = Faculty.objects.all()
+    serializer = FacultySerializer(faculty, many = True)
     return Response(serializer.data)
