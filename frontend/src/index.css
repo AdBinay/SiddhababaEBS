@@ -3,3 +3,7 @@ main {
     min-height: 80vh;
     /* background-color: #8e9ee8 ; */
 }
+
+FindUs {
+    min-height: 10vh;
+}

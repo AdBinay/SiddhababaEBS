@@ -1,5 +1,5 @@
 import React from 'react';
-import { MDBRow, MDBCol, MDBInput, MDBTextArea, MDBBtn, MDBIcon } from 'mdb-react-ui-kit';
+import {MDBCol, MDBIcon } from 'mdb-react-ui-kit';
 
 export default function FindUs() {
   return (
@@ -26,7 +26,7 @@ export default function FindUs() {
 				}}>GANDAKI PROVINCE , NEPAL</h6> <hr/>
 			</h1>
       <div className='row'>
-        <div className='col-lg-5'>
+        <div className='col-lg-4'>
           <iframe
             title='location'
             src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12094.57348593182!2d-74.00599512526003!3d40.72586666928451!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2598f988156a9%3A0xd54629bdf9d61d68!2sBroadway-Lafayette%20St!5e0!3m2!1spl!2spl!4v1624523797308!5m2!1spl!2spl'
@@ -35,11 +35,11 @@ export default function FindUs() {
             loading='lazy'
           ></iframe>
         </div>
-        <div className='col-lg-7'>
+        <div className='col-lg-8'>
           <form>
             <div className='row'>
                 <MDBCol md='3' lg='3' xl='3' className='mx-auto mb-4'>
-                  <h6 className='text-uppercase fw-bold mb-4'>Our Goals</h6>
+                  <h4 className='text-uppercase fw-bold mb-4'>Our Goals</h4>
                   <p>
                     <a href='#!' className='text-reset'>
                       Mission
@@ -57,8 +57,8 @@ export default function FindUs() {
                   </p>
                 </MDBCol>
 
-                <MDBCol md='3' lg='2' xl='2' className='mx-auto mb-4'>
-                  <h6 className='text-uppercase fw-bold mb-4'>More Links</h6>
+                <MDBCol md='3' lg='3' xl='3' className='mx-auto mb-4'>
+                  <h4 className='text-uppercase fw-bold mb-4'>More Links</h4>
                   <p>
                     <a href='#!' className='text-reset'>
                       Downloads
@@ -85,7 +85,7 @@ export default function FindUs() {
                   <li>
                     <i className='fas fa-map-marker-alt fa-2x text-primary'></i>
                     <p>
-                      <small>CHAPAKOT MUNICIPALITY - 08 , SYANGJA</small>
+                      <small>CHAPAKOT MUNICIPALITY-08,SYANGJA</small>
                     </p>
                   </li>
                   <li>
