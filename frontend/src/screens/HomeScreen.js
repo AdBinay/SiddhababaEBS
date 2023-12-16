@@ -6,7 +6,6 @@ function HomeScreen() {
   return (
     <div> 
         <BootstrapCarouselComponent />  <br/>
-        <FindUs />
     </div>
   )
 }

@@ -7,6 +7,7 @@ import NewsScreen from "./screens/NewsScreen";
 import HomeScreen from "./screens/HomeScreen";
 import FacultyScreen from "./screens/FacultyScreen";
 import GalleryScreen from "./screens/GalleryScreen";
+import FindUs from "./components/ContactUs";
 
 function App() {
   return (
@@ -24,7 +25,7 @@ function App() {
             </Routes>
           </Container>
         </main>
-        <Footer />
+        <FindUs />
       </Router>
     </div>
   );

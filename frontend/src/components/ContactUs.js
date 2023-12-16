@@ -1,10 +1,9 @@
 import React from 'react';
-import { MDBRow, MDBCol, MDBInput, MDBTextArea, MDBBtn } from 'mdb-react-ui-kit';
+import { MDBRow, MDBCol, MDBInput, MDBTextArea, MDBBtn, MDBIcon } from 'mdb-react-ui-kit';
 
 export default function FindUs() {
   return (
     <section className='border text-center mb-4'>
-      <h3 className='mb-5'>Contact us</h3>
       <h1
 				style={{
 					color: "Black",
@@ -18,7 +17,13 @@ export default function FindUs() {
 					color: "Black",
 					textAlign: "center",
 					marginTop: "10px",
-				}}>Chapakot Municipality-03, Shyangja</h5> <hr/>
+				}}>CHAPAKOT MUNICIPALITY - 08 , SYANGJA</h5>  <br/>
+        <h6 
+        style={{
+					color: "Black",
+					textAlign: "center",
+					marginTop: "-30px",
+				}}>GANDAKI PROVINCE , NEPAL</h6> <hr/>
 			</h1>
       <div className='row'>
         <div className='col-lg-5'>
@@ -33,28 +38,48 @@ export default function FindUs() {
         <div className='col-lg-7'>
           <form>
             <div className='row'>
-              <div className='col-md-9'>
-                <MDBRow className='mb-4'>
-                  <MDBCol >
-                    <MDBInput id='form3FirstName' placeholder='First name' />
-                  </MDBCol>
-                  <MDBCol>
-                    <MDBInput  id='form3Email' placeholder='Email Address' />
-                  </MDBCol>
-                </MDBRow>
-                <MDBInput
-                  type='text'
-                  id='form3Subject'
-                  v-model='form3Subject'
-                  wrapperClass='mb-4'
-                  placeholder='Subject'
-                />
-                <MDBTextArea id='form3Textarea' wrapperClass='mb-5' placeholder='Message' />
-                <MDBBtn color='info' className='mb-4'>
-                  {' '}
-                  Send{' '}
-                </MDBBtn>
-              </div>
+                <MDBCol md='3' lg='3' xl='3' className='mx-auto mb-4'>
+                  <h6 className='text-uppercase fw-bold mb-4'>Our Goals</h6>
+                  <p>
+                    <a href='#!' className='text-reset'>
+                      Mission
+                    </a>
+                  </p>
+                  <p>
+                    <a href='#!' className='text-reset'>
+                      Vision
+                    </a>
+                  </p>
+                  <p>
+                    <a href='#!' className='text-reset'>
+                      Objectives
+                    </a>
+                  </p>
+                </MDBCol>
+
+                <MDBCol md='3' lg='2' xl='2' className='mx-auto mb-4'>
+                  <h6 className='text-uppercase fw-bold mb-4'>More Links</h6>
+                  <p>
+                    <a href='#!' className='text-reset'>
+                      Downloads
+                    </a>
+                  </p>
+                  <p>
+                    <a href='#!' className='text-reset'>
+                      Curriculams
+                    </a>
+                  </p>
+                  <p>
+                    <a href='#!' className='text-reset'>
+                      Testimonials
+                    </a>
+                  </p>
+                  <p>
+                    <a href='/faculty' className='text-reset'>
+                      Faculty & Staffs
+                    </a>
+                  </p>
+                </MDBCol>
               <div className='col-md-3'>
                 <ul className='list-unstyled'>
                   <li>
@@ -80,6 +105,38 @@ export default function FindUs() {
             </div>
           </form>
         </div>
+      </div> <br/>
+      <section className='d-flex justify-content-center justify-content-lg-between p-4 border-bottom'>
+        <div className='me-5 d-none d-lg-block'>
+          <span>Get connected with us on social networks:</span>
+        </div>
+
+        <div>
+          <a href='' className='me-4 text-reset'>
+            <MDBIcon color='secondary' fab icon='facebook-f' />
+          </a>
+          <a href='' className='me-4 text-reset'>
+            <MDBIcon color='secondary' fab icon='twitter' />
+          </a>
+          <a href='' className='me-4 text-reset'>
+            <MDBIcon color='secondary' fab icon='google' />
+          </a>
+          <a href='' className='me-4 text-reset'>
+            <MDBIcon color='secondary' fab icon='instagram' />
+          </a>
+          <a href='' className='me-4 text-reset'>
+            <MDBIcon color='secondary' fab icon='linkedin' />
+          </a>
+          <a href='' className='me-4 text-reset'>
+            <MDBIcon color='secondary' fab icon='github' />
+          </a>
+        </div>
+      </section>
+      <div className='text-center p-4' style={{ backgroundColor: 'rgba(0, 0, 0, 0.05)' }}>
+        © 2023 Copyright:
+        <a className='text-reset fw-bold' href='https://mdbootstrap.com/'>
+          Siddhababa school
+        </a>
       </div>
     </section>
   );
