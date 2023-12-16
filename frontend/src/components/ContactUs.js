@@ -5,6 +5,21 @@ export default function FindUs() {
   return (
     <section className='border text-center mb-4'>
       <h3 className='mb-5'>Contact us</h3>
+      <h1
+				style={{
+					color: "Black",
+					textAlign: "center",
+					marginTop: "10px",
+				}}
+			>
+				Siddhababa English Boarding School <br/> 
+        <h5 
+        style={{
+					color: "Black",
+					textAlign: "center",
+					marginTop: "10px",
+				}}>Chapakot Municipality-03, Shyangja</h5> <hr/>
+			</h1>
       <div className='row'>
         <div className='col-lg-5'>
           <iframe
