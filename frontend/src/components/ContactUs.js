@@ -85,19 +85,19 @@ export default function FindUs() {
                   <li>
                     <i className='fas fa-map-marker-alt fa-2x text-primary'></i>
                     <p>
-                      <small>New York, NY 10012, USA</small>
+                      <small>CHAPAKOT MUNICIPALITY - 08 , SYANGJA</small>
                     </p>
                   </li>
                   <li>
                     <i className='fas fa-phone fa-2x text-primary'></i>
                     <p>
-                      <small>+ 01 234 567 89</small>
+                      <small>+9779845548297</small>
                     </p>
                   </li>
                   <li>
                     <i className='fas fa-envelope fa-2x text-primary'></i>
                     <p>
-                      <small>contact@gmail.com</small>
+                      <small>contactsiddhababa@gmail.com</small>
                     </p>
                   </li>
                 </ul>
