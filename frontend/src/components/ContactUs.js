@@ -4,27 +4,6 @@ import {MDBCol, MDBIcon } from 'mdb-react-ui-kit';
 export default function FindUs() {
   return (
     <section className='border text-center mb-4'>
-      <h1
-				style={{
-					color: "Black",
-					textAlign: "center",
-					marginTop: "10px",
-				}}
-			>
-				Siddhababa English Boarding School <br/> 
-        <h5 
-        style={{
-					color: "Black",
-					textAlign: "center",
-					marginTop: "10px",
-				}}>CHAPAKOT MUNICIPALITY - 08 , SYANGJA</h5>  <br/>
-        <h6 
-        style={{
-					color: "Black",
-					textAlign: "center",
-					marginTop: "-30px",
-				}}>GANDAKI PROVINCE , NEPAL</h6> <hr/>
-			</h1>
       <div className='row'>
         <div className='col-lg-4'>
           <iframe

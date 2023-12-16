@@ -12,3 +12,11 @@
   line-height: 1.2; /* Adjust line height for text alignment */
   color: red;
 }
+
+.marque{
+  width: 70vh;
+}
+
+.TestHead{
+  background-color: #e09f23;
+}

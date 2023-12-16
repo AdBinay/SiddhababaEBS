@@ -19,14 +19,17 @@ function OverHead() {
   const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
 
   return (
-    <Navbar bg="success" data-bs-theme="dark" className="OverHead">
+    <Navbar bg="light" data-bs-theme="dark" className="OverHead">
       <Container>
-        {/* <Navbar.Brand href="#home">Navbar</Navbar.Brand>
+        {/* <Navbar.Brand href="#home">Navbar</Navbar.Brand> */}
         <Nav className="me-auto">
-          <Nav.Link href="#home">Home</Nav.Link>
-          <Nav.Link href="#features">Features</Nav.Link>
-          <Nav.Link href="#pricing">Pricing</Nav.Link>
-        </Nav> */}
+          <Nav.Link href="#home">Our Mission</Nav.Link>
+          <Nav.Link href="#features">Our Vision</Nav.Link>
+          <Nav.Link href="#pricing">Our Objectives</Nav.Link>
+        </Nav>
+        <marquee className='marque'>
+            श्री सिद्धबाबा इंगलिस बोर्डिगं स्कुल,चापाकोट नगरपालिका-०२ स्याङ्गजा गण्डकी नेपाल |
+        </marquee>
         <Nav className="ms-auto">
           <Nav.Item>
             <Nav.Link disabled>{currentDateTime.toLocaleDateString(undefined, options)}</Nav.Link>

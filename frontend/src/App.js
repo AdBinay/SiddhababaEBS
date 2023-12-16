@@ -8,11 +8,14 @@ import FacultyScreen from "./screens/FacultyScreen";
 import GalleryScreen from "./screens/GalleryScreen";
 import FindUs from "./components/ContactUs";
 import OverHead from "./components/OverHead";
+import TestHead from "./components/TestHead";
+
 
 function App() {
   return (
     <div>
       <Router>
+        <TestHead/>
         <OverHead/>
         <Header />
         <main className="py-3">
