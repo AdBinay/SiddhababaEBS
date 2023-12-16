@@ -7,11 +7,13 @@ import HomeScreen from "./screens/HomeScreen";
 import FacultyScreen from "./screens/FacultyScreen";
 import GalleryScreen from "./screens/GalleryScreen";
 import FindUs from "./components/ContactUs";
+import OverHead from "./components/OverHead";
 
 function App() {
   return (
     <div>
       <Router>
+        <OverHead/>
         <Header />
         <main className="py-3">
           <Container>

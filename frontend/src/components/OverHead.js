@@ -1,3 +1,50 @@
+import './OverHead.css'
+import React, { useState, useEffect } from 'react';
+import Container from 'react-bootstrap/Container';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
+
+function OverHead() {
+  const [currentDateTime, setCurrentDateTime] = useState(new Date());
+
+  // Update the date and time every second
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentDateTime(new Date());
+    }, 1000);
+
+    return () => clearInterval(interval);
+  }, []);
+
+  const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+
+  return (
+    <Navbar bg="success" data-bs-theme="dark" className="OverHead">
+      <Container>
+        {/* <Navbar.Brand href="#home">Navbar</Navbar.Brand>
+        <Nav className="me-auto">
+          <Nav.Link href="#home">Home</Nav.Link>
+          <Nav.Link href="#features">Features</Nav.Link>
+          <Nav.Link href="#pricing">Pricing</Nav.Link>
+        </Nav> */}
+        <Nav className="ms-auto">
+          <Nav.Item>
+            <Nav.Link disabled>{currentDateTime.toLocaleDateString(undefined, options)}</Nav.Link>
+          </Nav.Item>
+          <Nav.Item>
+            <Nav.Link disabled>{currentDateTime.toLocaleTimeString()}</Nav.Link>
+          </Nav.Item>
+        </Nav>
+      </Container>
+    </Navbar>
+  );
+}
+
+export default OverHead;
+
+
+
+
 //  phone number , Time and Date ,  Calender ,  Complaint box
 
 // import React from 'react';

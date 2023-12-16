@@ -1,0 +1,14 @@
+/* styles.css */
+.OverHead {
+  height: 20px; /* Set the desired height */
+  
+}
+
+/* Optional: Adjust other Navbar elements to fit within the reduced height */
+.OverHead .navbar-brand,
+.OverHead .nav-link {
+  padding: 0.5rem; /* Adjust the padding as needed */
+  font-size: 0.8rem; /* Adjust the font size as needed */
+  line-height: 1.2; /* Adjust line height for text alignment */
+  color: red;
+}
