@@ -8,7 +8,7 @@ function Header() {
   return (
     <header>
       <Navbar
-        bg="warning"
+        bg="info"
         variant="dark"
         expand="lg"
         collapseOnSelect
