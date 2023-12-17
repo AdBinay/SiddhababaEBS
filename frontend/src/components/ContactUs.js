@@ -1,101 +1,89 @@
 import React from 'react';
-import {MDBCol, MDBIcon } from 'mdb-react-ui-kit';
+import { MDBRow, MDBCol, MDBInput, MDBTextArea, MDBBtn } from 'mdb-react-ui-kit';
 
 export default function FindUs() {
   return (
-    <section className='border text-center mb-4 justify-center' style={{ width: '90%'}}>
-      <div className='row '>
-        <div className='col-lg-4'>
+    <section className='border text-center mb-4'>
+      <div className='row'>
+        <div className='col-lg-5'>
           <iframe
-            title='location'
-            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3527.0669311913603!2d83.81599136536101!3d27.886923808253844!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2snp!4v1702709474032!5m2!1sen!2snp"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d56415.41129096034!2d83.77491363826401!3d27.903102423849127!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3995ce999a67f765%3A0xd18a5af880884508!2sChapakot!5e0!3m2!1sen!2snp!4v1702784463302!5m2!1sen!2snp" 
             className='h-100 w-100'
             style={{ border: '0' }}
             loading='lazy'
           ></iframe>
         </div>
-        <div className='col-lg-8'>
+        <div className='col-lg-7'>
           <form>
             <div className='row'>
-                <MDBCol md='3' lg='3' xl='3' className='mx-auto mb-4'>
-                  <h4 className='text-uppercase fw-bold mb-4'>Our Goals</h4>
-                  <p>
-                    <a href='#!' className='text-reset'>
-                      Mission
-                    </a>
-                  </p>
-                  <p>
-                    <a href='#!' className='text-reset'>
-                      Vision
-                    </a>
-                  </p>
-                  <p>
-                    <a href='#!' className='text-reset'>
+              <div className='col-md-9'>
+                <MDBRow className='mb-4'>
+                  <MDBCol>
+                    <h6>Complaint & Suggession Box</h6>
+                    <MDBInput id='form3FirstName' placeholder='First name' />
+                  </MDBCol>
+                  <MDBCol>
+                    <MDBInput id='form3Email' placeholder='Email Address' />
+                  </MDBCol>
+                </MDBRow>
+                <MDBInput
+                  type='text'
+                  id='form3Subject'
+                  v-model='form3Subject'
+                  wrapperClass='mb-4'
+                  placeholder='Subject'
+                />
+                <MDBTextArea id='form3Textarea' wrapperClass='mb-4' placeholder='Message' />
+                <MDBBtn color='danger' className='mb-4'>
+                  {' '}
+                  Send{' '}
+                </MDBBtn>
+              </div>
+              <div className='col-md-3'>
+              <h5>OTHER LINKS</h5> <br/>
+                <ul className='list-unstyled'>
+                  <li>
+                    {/* <i className='fas fa-map-marker-alt fa-2x text-primary'></i> */}
+                    <p>
+                      Our Mission
+                    </p>
+                  </li>
+                  <li>
+                    {/* <i className='fas fa-phone fa-2x text-primary'></i> */}
+                    <p>
+                      Our Vision
+                    </p>
+                  </li>
+                  <li>
+                    {/* <i className='fas fa-envelope fa-2x text-primary'></i> */}
+                    <p>
                       Objectives
-                    </a>
-                  </p>
-                </MDBCol>
-
-                <MDBCol md='3' lg='3' xl='3' className='mx-auto mb-4'>
-                  <h4 className='text-uppercase fw-bold mb-4'>More Links</h4>
-                  <p>
-                    <a href='#!' className='text-reset'>
-                      Downloads
-                    </a>
-                  </p>
-                  <p>
-                    <a href='#!' className='text-reset'>
-                      Curriculams
-                    </a>
-                  </p>
-                  <p>
-                    <a href='#!' className='text-reset'>
-                      Testimonials
-                    </a>
-                  </p>
-                  <p>
-                    <a href='/faculty' className='text-reset'>
-                      Faculty & Staffs
-                    </a>
-                  </p>
-                </MDBCol>
+                    </p>
+                  </li>
+                  <li>
+                    {/* <i className='fas fa-envelope fa-2x text-primary'></i> */}
+                    <p>
+                      Gallery
+                    </p>
+                  </li>
+                  <li>
+                    {/* <i className='fas fa-envelope fa-2x text-primary'></i> */}
+                    <p>
+                      Faculty and Staffs
+                    </p>
+                  </li>
+                </ul>
+              </div>
             </div>
           </form>
         </div>
       </div> <br/>
-      <section className='d-flex justify-content-center justify-content-lg-between p-4 border-bottom'>
-        <div className='me-5 d-none d-lg-block'>
-          <span>Get connected with us on social networks:</span>
-        </div>
-
-        <div>
-          <a href='' className='me-4 text-reset'>
-            <MDBIcon color='secondary' fab icon='facebook-f' />
-          </a>
-          <a href='' className='me-4 text-reset'>
-            <MDBIcon color='secondary' fab icon='twitter' />
-          </a>
-          <a href='' className='me-4 text-reset'>
-            <MDBIcon color='secondary' fab icon='google' />
-          </a>
-          <a href='' className='me-4 text-reset'>
-            <MDBIcon color='secondary' fab icon='instagram' />
-          </a>
-          <a href='' className='me-4 text-reset'>
-            <MDBIcon color='secondary' fab icon='linkedin' />
-          </a>
-          <a href='' className='me-4 text-reset'>
-            <MDBIcon color='secondary' fab icon='github' />
-          </a>
-        </div>
-      </section>
-      <div className='text-center p-4' style={{ backgroundColor: 'rgba(0, 0, 0, 0.05)' }}>
+      <div className='text-center p-4' style={{ backgroundColor: 'rgba(0, 0, 0, 0.00)' }}>
         © 2023 Copyright:
-        <a className='text-reset fw-bold' href='https://mdbootstrap.com/'>
-          Siddhababa school
+        <a className='text-reset fw-bold' href='https://siddhababaschool.com/'>
+          siddhababa_school
         </a>
       </div>
     </section>
   );
 }
-
