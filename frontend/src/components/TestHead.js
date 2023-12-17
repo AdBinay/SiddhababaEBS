@@ -8,13 +8,16 @@ function TestHead() {
         <div className="col-lg-7">
           <div className=" ml-3 d-flex justify-content-around">
             <a href="/">
-              <img className="mr-3" src="../images/logo.png" alt="SEBSS Logo" width="200" height="200" />
+              <img className="mr-3" src="../images/logo.png" alt="SEBSS Logo" width="250" height="250" />
             </a>
             <div className='mt-4'>
-            <h1 className="h4 OpenSans-ExtraBold text-uppercase">
-              Shree Siddhababa English Boarding School
-            </h1>
-            <p>"Education For Excellence And Discipline"</p>
+            <h1 className=" OpenSans-ExtraBold text-uppercase">
+              Shree Siddhababa Secondary English Boarding School
+            </h1 >
+            <p className=" OpenSans-ExtraBold text-uppercase">"Education For Excellence And Discipline"</p>
+            <marquee className='marque'>
+              <h2>श्री सिद्धबाबा इंगलिस बोर्डिगं स्कुल,चापाकोट नगरपालिका-०२ स्याङ्गजा गण्डकी नेपाल |</h2>
+            </marquee>
             </div>
           </div>
           

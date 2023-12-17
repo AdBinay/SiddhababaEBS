@@ -3,8 +3,8 @@ import {MDBCol, MDBIcon } from 'mdb-react-ui-kit';
 
 export default function FindUs() {
   return (
-    <section className='border text-center mb-4'>
-      <div className='row'>
+    <section className='border text-center mb-4 justify-center' style={{ width: '90%'}}>
+      <div className='row '>
         <div className='col-lg-4'>
           <iframe
             title='location'
@@ -59,28 +59,6 @@ export default function FindUs() {
                     </a>
                   </p>
                 </MDBCol>
-              <div className='col-md-3'>
-                <ul className='list-unstyled'>
-                  <li>
-                    <i className='fas fa-map-marker-alt fa-2x text-primary'></i>
-                    <p>
-                      <small>CHAPAKOT MUNICIPALITY-08,SYANGJA</small>
-                    </p>
-                  </li>
-                  <li>
-                    <i className='fas fa-phone fa-2x text-primary'></i>
-                    <p>
-                      <small>+9779845548297</small>
-                    </p>
-                  </li>
-                  <li>
-                    <i className='fas fa-envelope fa-2x text-primary'></i>
-                    <p>
-                      <small>contactsiddhababa@gmail.com</small>
-                    </p>
-                  </li>
-                </ul>
-              </div>
             </div>
           </form>
         </div>
