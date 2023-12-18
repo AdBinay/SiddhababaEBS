@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-
+import { LinkContainer } from "react-router-bootstrap";
 function OverHead() {
   const [currentDateTime, setCurrentDateTime] = useState(new Date());
 
@@ -19,13 +19,25 @@ function OverHead() {
   const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
 
   return (
-    <Navbar bg="light" data-bs-theme="dark" className="OverHead">
+    <Navbar bg="light" className="OverHead">
       <Container>
         {/* <Navbar.Brand href="#home">Navbar</Navbar.Brand> */}
         <Nav className="me-auto">
-          <Nav.Link href="/mission">Our Mission</Nav.Link>
-          <Nav.Link href="/vision">Our Vision</Nav.Link>
-          <Nav.Link href="/objectives">Our Objectives</Nav.Link>
+          <LinkContainer to="/mission">
+            <Nav.Link >
+              Our Mission
+            </Nav.Link>
+          </LinkContainer>
+          <LinkContainer to="/vision">
+            <Nav.Link >
+              Our Vision
+            </Nav.Link>
+          </LinkContainer>
+          <LinkContainer to="/objectives">
+            <Nav.Link >
+              Our Objectives
+            </Nav.Link>
+          </LinkContainer>
         </Nav>
         {/* <marquee className='marque'>
             श्री सिद्धबाबा इंगलिस बोर्डिगं स्कुल,चापाकोट नगरपालिका-०२ स्याङ्गजा गण्डकी नेपाल |

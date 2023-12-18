@@ -10,15 +10,9 @@ class BootstrapCarouselComponent extends React.Component {
         return (
             <div>
                 <div className='container-fluid' >
-                    {/* <div className="row">
-                        <div className="col-sm-12">
-                            <h3>Home</h3>
-                        </div>
-                    </div> */}
                     <div className="row">
                         <div className="col-12">
                             <Carousel>
-
                                 <Carousel.Item>
                                     <img
                                         className="d-block w-100"

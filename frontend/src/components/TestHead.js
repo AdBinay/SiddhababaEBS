@@ -1,6 +1,7 @@
 import React from 'react';
 import './OverHead.css';
-
+import { LinkContainer } from "react-router-bootstrap";
+import Nav from 'react-bootstrap/Nav';
 
 function TestHead() {
   return (
@@ -8,9 +9,11 @@ function TestHead() {
       <div className="row topbar pad-2 d-flex justify-content-between">
         <div className="col-lg-7">
           <div className=" ml-3 d-flex justify-content-around">
-            <a href="/">
+          <LinkContainer to="/">
+            <Nav.Link >
               <img className="mr-3" src="../images/logo.png" alt="SEBSS Logo" width="250" height="250" />
-            </a>
+            </Nav.Link>
+          </LinkContainer>
             <div className='mt-4'>
             <h1 className=" OpenSans-ExtraBold text-uppercase">
               Shree Siddhababa Secondary English Boarding School
@@ -21,7 +24,6 @@ function TestHead() {
             </marquee>
             </div>
           </div>
-          
         </div>
             <div className='col-lg-3 mt-4'>
                 <ul className='list-unstyled '>
