@@ -11,6 +11,9 @@ import OverHead from "./components/OverHead";
 import TestHead from "./components/TestHead";
 import DownloadsScreen from "./screens/DownloadsScreen";
 // import Testimonials from "./components/Testimonials";
+import MissionScreen from "./screens/MissionScreen";
+import VisionScreen from "./screens/VisionScreen"; 
+import ObjectivesScreen from "./screens/ObjectivesScreen";
 
 
 function App() {
@@ -29,6 +32,9 @@ function App() {
               <Route path="/faculty/" element={<FacultyScreen />} />
               <Route path="/gallery/" element={<GalleryScreen />} />
               <Route path="/downloads/" element={<DownloadsScreen />} />
+              <Route path="/mission/" element={<MissionScreen />} />
+              <Route path="/vision/" element={<VisionScreen />} />
+              <Route path="/objectives/" element={<ObjectivesScreen />} />
             </Routes>
           </Container>
         </main>
