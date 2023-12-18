@@ -31,3 +31,25 @@ class Gallery(models.Model):
 
     def __str__(self):
         return self.name
+    
+
+class Mission(models.Model):
+    name = models.CharField(max_length=200, null=False,blank=False)
+    description = models.TextField(null=False , blank=False)
+
+    def __str__(self):
+        return self.name
+    
+class Vission(models.Model):
+    name = models.CharField(max_length=200, null=False,blank=False)
+    description = models.TextField(null=False , blank=False)
+
+    def __str__(self):
+        return self.name
+    
+class Objectives(models.Model):
+    name = models.CharField(max_length=200, null=False,blank=False)
+    description = models.TextField(null=False , blank=False)
+
+    def __str__(self):
+        return self.name

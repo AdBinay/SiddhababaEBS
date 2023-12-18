@@ -4,8 +4,8 @@ from rest_framework.decorators import api_view
 from rest_framework.response import Response
 
 from .notice import notices
-from .models import Notice , Faculty , Gallery
-from .serializers import NoticeSerializer ,FacultySerializer, GallerySerializer
+from .models import Notice , Faculty , Gallery, Mission, Vission, Objectives
+from .serializers import NoticeSerializer ,FacultySerializer, GallerySerializer, MissionSerializer, VissionSerializer, ObjectivesSerializer
 # Create your views here.
 
 @api_view(['GET'])
@@ -19,8 +19,10 @@ def getRoutes(request):
         '/api/gallery/',
         # '/api/gallery/<id>/',
 
-        '/api/notices/delete/<id>/',
-        '/api/notices/<update>/<id>/',
+        '/api/mission/',
+        '/api/vission/',
+        '/api/objectives/',
+        
     ]
     return Response(routes)
 
@@ -51,3 +53,21 @@ def getgallery(request):
     serializer = GallerySerializer(gallery, many = True)
     return Response(serializer.data)
 
+
+@api_view(['GET'])
+def getmission(request):
+    mission = Mission.objects.all()
+    serializer = MissionSerializer(mission, many = True)
+    return Response(serializer.data)
+
+@api_view(['GET'])
+def getvission(request):
+    vission = Vission.objects.all()
+    serializer = VissionSerializer(vission, many = True)
+    return Response(serializer.data)
+
+@api_view(['GET'])
+def getobjectives(request):
+    objectives = Objectives.objects.all()
+    serializer = GallerySerializer(objectives, many = True)
+    return Response(serializer.data)

@@ -1,5 +1,5 @@
 from django.contrib import admin
-from . models import Notice, Faculty, Gallery
+from . models import Notice, Faculty, Gallery , Mission, Vission, Objectives
 # Register your models here.
 
 class NoticeAdmin(admin.ModelAdmin):
@@ -12,5 +12,8 @@ class NoticeAdmin(admin.ModelAdmin):
 admin.site.register(Notice, NoticeAdmin)
 admin.site.register(Faculty)
 admin.site.register(Gallery)
+admin.site.register(Mission)
+admin.site.register(Vission)
+admin.site.register(Objectives)
 
 

@@ -7,4 +7,7 @@ urlpatterns = [
     path('notices/<str:pk>/',views.getnotice, name='notice'),
     path('faculty/',views.getfaculty, name='faculty'),
     path('gallery/',views.getgallery, name='gallery'),
+    path('mission/',views.getmission, name='mission'),
+    path('vission/',views.getvission, name='vission'),
+    path('objectives/',views.getobjectives, name='objectives'),
 ]
