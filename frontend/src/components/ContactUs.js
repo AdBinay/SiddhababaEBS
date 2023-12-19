@@ -3,7 +3,7 @@ import { MDBRow, MDBCol, MDBInput, MDBTextArea, MDBBtn } from 'mdb-react-ui-kit'
 
 export default function FindUs() {
   return (
-    <section className='border text-center mb-4'>
+    <section className='border text-center mb-4 bg-light container-fluid'>
       <div className='row'>
         <div className='col-lg-5'>
           <iframe
