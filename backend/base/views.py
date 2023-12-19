@@ -4,8 +4,8 @@ from rest_framework.decorators import api_view
 from rest_framework.response import Response
 
 from .notice import notices
-from .models import Notice , Faculty , Gallery, Mission, Vission, Objectives
-from .serializers import NoticeSerializer ,FacultySerializer, GallerySerializer, MissionSerializer, VissionSerializer, ObjectivesSerializer
+from .models import Notice , Faculty , Gallery, Mission, Vission, Objectives, SchoolInformation
+from .serializers import NoticeSerializer ,FacultySerializer, GallerySerializer, MissionSerializer, VissionSerializer, ObjectivesSerializer, SchoolInformationSerializer
 # Create your views here.
 
 @api_view(['GET'])
@@ -22,6 +22,7 @@ def getRoutes(request):
         '/api/mission/',
         '/api/vission/',
         '/api/objectives/',
+        '/api/schoolinformation/',
         
     ]
     return Response(routes)
@@ -70,4 +71,11 @@ def getvission(request):
 def getobjectives(request):
     objectives = Objectives.objects.all()
     serializer = ObjectivesSerializer(objectives, many = True)
+    return Response(serializer.data)
+
+
+@api_view(['GET'])
+def getschoolinformation(request):
+    schoolinformation = SchoolInformation.objects.all()
+    serializer = SchoolInformationSerializer(schoolinformation, many = True)
     return Response(serializer.data)

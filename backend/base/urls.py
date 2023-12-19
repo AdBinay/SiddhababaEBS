@@ -10,4 +10,5 @@ urlpatterns = [
     path('mission/',views.getmission, name='mission'),
     path('vission/',views.getvission, name='vission'),
     path('objectives/',views.getobjectives, name='objectives'),
+    path('schoolinformation/',views.getschoolinformation, name='schoolinformation'),
 ]

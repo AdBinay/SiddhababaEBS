@@ -53,3 +53,19 @@ class Objectives(models.Model):
 
     def __str__(self):
         return self.name
+    
+
+class SchoolInformation(models.Model):
+    user = models.ForeignKey(User, on_delete=models.SET_NULL, null=True)
+    school_name = models.CharField(max_length=200, null=False,blank=False)
+    school_logo = models.ImageField(null=True,blank=True)
+    school_motto = models.CharField(max_length=200, null=False,blank=False)
+    nepali_name = models.CharField(max_length=200, null=False,blank=False)
+    school_email = models.EmailField(("email address"), unique=True)
+    school_phone = models.IntegerField()
+    school_address = models.CharField(max_length=200, null=False,blank=False)
+    
+
+    def __str__(self):
+        return self. school_name
+    
