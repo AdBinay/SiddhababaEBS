@@ -18,7 +18,7 @@ function ObjectivesScreen() {
     <div>
       <h1>Our Objectives</h1> <br />
       <Row>
-        {objectives.map((vission) => (
+        {objectives.map((objectives) => (
             <p>{objectives.description}</p>
         ))}
       </Row>
