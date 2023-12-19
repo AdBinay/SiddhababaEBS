@@ -69,5 +69,5 @@ def getvission(request):
 @api_view(['GET'])
 def getobjectives(request):
     objectives = Objectives.objects.all()
-    serializer = GallerySerializer(objectives, many = True)
+    serializer = ObjectivesSerializer(objectives, many = True)
     return Response(serializer.data)
