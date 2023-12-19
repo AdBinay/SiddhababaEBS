@@ -34,9 +34,9 @@ function Header() {
                   <i className="fa-solid fa-image"></i> Gallery
                 </Nav.Link>
               </LinkContainer>
-              <LinkContainer to="/downloads">
+              <LinkContainer to="/calender">
                 <Nav.Link className="text-light">
-                  <i className="fa-solid fa-download"></i> Downloads
+                  <i className="fa fa-calendar"></i> Calender
                 </Nav.Link>
               </LinkContainer>
               <LinkContainer to="/curriculum">
