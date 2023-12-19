@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "nepali-calender-react": "^1.0.0",
     "react-tsparticles": "^2.12.2"
   }
 }
