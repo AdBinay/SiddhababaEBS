@@ -1,5 +1,8 @@
 import React from 'react';
 import { MDBRow, MDBCol, MDBInput, MDBTextArea, MDBBtn } from 'mdb-react-ui-kit';
+import Nav from 'react-bootstrap/Nav';
+import { LinkContainer } from "react-router-bootstrap";
+
 
 export default function FindUs() {
   return (
@@ -44,34 +47,39 @@ export default function FindUs() {
               <h5>OTHER LINKS</h5> <br/>
                 <ul className='list-unstyled'>
                   <li>
-                    {/* <i className='fas fa-map-marker-alt fa-2x text-primary'></i> */}
-                    <p>
-                      Our Mission
-                    </p>
+                    <LinkContainer to="/mission">
+                      <Nav.Link >
+                        Our Mission
+                      </Nav.Link>
+                    </LinkContainer>
                   </li>
                   <li>
-                    {/* <i className='fas fa-phone fa-2x text-primary'></i> */}
-                    <p>
-                      Our Vision
-                    </p>
+                    <LinkContainer to="/vission">
+                      <Nav.Link >
+                        Our Vision
+                      </Nav.Link>
+                    </LinkContainer>
                   </li>
                   <li>
-                    {/* <i className='fas fa-envelope fa-2x text-primary'></i> */}
-                    <p>
-                      Objectives
-                    </p>
+                    <LinkContainer to="/objectives">
+                      <Nav.Link >
+                        Our Objectives
+                      </Nav.Link>
+                    </LinkContainer>
                   </li>
                   <li>
-                    {/* <i className='fas fa-envelope fa-2x text-primary'></i> */}
-                    <p>
-                      Gallery
-                    </p>
+                    <LinkContainer to="/gallery">
+                      <Nav.Link >
+                        Gallery
+                      </Nav.Link>
+                    </LinkContainer>
                   </li>
                   <li>
-                    {/* <i className='fas fa-envelope fa-2x text-primary'></i> */}
-                    <p>
-                      Faculty and Staffs
-                    </p>
+                    <LinkContainer to="/faculty">
+                      <Nav.Link >
+                        Faculty & Staffs
+                      </Nav.Link>
+                    </LinkContainer>
                   </li>
                 </ul>
               </div>
