@@ -11,4 +11,6 @@ urlpatterns = [
     path('vission/',views.getvission, name='vission'),
     path('objectives/',views.getobjectives, name='objectives'),
     path('schoolinformation/',views.getschoolinformation, name='schoolinformation'),
+    path('profilepicture/',views.getprofilepicture, name='profilepicture'),
 ]
+

@@ -3,9 +3,9 @@ from django.http import JsonResponse
 from rest_framework.decorators import api_view 
 from rest_framework.response import Response
 
-from .notice import notices
-from .models import Notice , Faculty , Gallery, Mission, Vission, Objectives, SchoolInformation
-from .serializers import NoticeSerializer ,FacultySerializer, GallerySerializer, MissionSerializer, VissionSerializer, ObjectivesSerializer, SchoolInformationSerializer
+
+from .models import Notice , Faculty , Gallery, Mission, Vission, Objectives, SchoolInformation, Profileimage
+from .serializers import NoticeSerializer ,FacultySerializer, GallerySerializer, MissionSerializer, VissionSerializer, ObjectivesSerializer, SchoolInformationSerializer, ProfileimageSerializer
 # Create your views here.
 
 @api_view(['GET'])
@@ -23,6 +23,9 @@ def getRoutes(request):
         '/api/vission/',
         '/api/objectives/',
         '/api/schoolinformation/',
+
+
+        '/api/profilepicture/'
         
     ]
     return Response(routes)
@@ -78,4 +81,10 @@ def getobjectives(request):
 def getschoolinformation(request):
     schoolinformation = SchoolInformation.objects.all()
     serializer = SchoolInformationSerializer(schoolinformation, many = True)
+    return Response(serializer.data)
+
+@api_view(['GET'])
+def getprofilepicture(request):
+    profilepicture = Profileimage.objects.all()
+    serializer = ProfileimageSerializer(profilepicture, many = True)
     return Response(serializer.data)
