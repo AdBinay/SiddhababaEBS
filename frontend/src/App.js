@@ -10,7 +10,7 @@ import FindUs from "./components/ContactUs";
 import OverHead from "./components/OverHead";
 import TestHead from "./components/TestHead";
 import CalendarScreen from "./screens/CalenderScreen";
-// import Testimonials from "./components/Testimonials";
+// import CurriculamScreen from "./screens/CurriculamScreen";
 import MissionScreen from "./screens/MissionScreen";
 import VisionScreen from "./screens/VisionScreen"; 
 import ObjectivesScreen from "./screens/ObjectivesScreen";
