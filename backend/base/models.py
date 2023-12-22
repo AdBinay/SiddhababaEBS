@@ -72,8 +72,6 @@ class SchoolInformation(models.Model):
 
 
 class Profileimage(models.Model):
-    image_heading = models.CharField(max_length=200, null=False,blank=False)
-    image_caption = models.TextField(null=False , blank=False)
     first_image = models.ImageField(null=True,blank=True)
     second_image = models.ImageField(null=True,blank=True)
     third_image = models.ImageField(null=True,blank=True)
