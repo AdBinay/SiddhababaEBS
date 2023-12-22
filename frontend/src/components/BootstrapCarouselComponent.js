@@ -27,10 +27,10 @@ const BootstrapCarouselComponent = () => {
                       src={profilepicture.first_image}
                       alt="First slide"
                     />
-                    <Carousel.Caption>
+                    {/* <Carousel.Caption>
                       <h3>{profilepicture.image_heading}</h3>
                       <p>{profilepicture.image_caption}</p>
-                    </Carousel.Caption>
+                    </Carousel.Caption> */}
                   </Carousel.Item>
 
                   <Carousel.Item>
@@ -39,10 +39,10 @@ const BootstrapCarouselComponent = () => {
                       src={profilepicture.second_image}
                       alt="Second slide"
                     />
-                    <Carousel.Caption>
+                    {/* <Carousel.Caption>
                       <h3>{profilepicture.image_heading}</h3>
                       <p>{profilepicture.image_caption}</p>
-                    </Carousel.Caption>
+                    </Carousel.Caption> */}
                   </Carousel.Item>
 
                   <Carousel.Item>
@@ -51,10 +51,10 @@ const BootstrapCarouselComponent = () => {
                       src={profilepicture.third_image}
                       alt="Third slide"
                     />
-                    <Carousel.Caption>
+                    {/* <Carousel.Caption>
                       <h3>{profilepicture.image_heading}</h3>
                       <p>{profilepicture.image_caption}</p>
-                    </Carousel.Caption>
+                    </Carousel.Caption> */}
                   </Carousel.Item>
                 </Carousel>
               </div>
