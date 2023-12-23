@@ -7,7 +7,7 @@ import { LinkContainer } from "react-router-bootstrap";
 function OverHead() {
   const [currentDateTime, setCurrentDateTime] = useState(new Date());
 
-  // Update the date and time every second
+  // Updateing the date and time every second
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentDateTime(new Date());
@@ -21,7 +21,6 @@ function OverHead() {
   return (
     <Navbar bg="light" className="OverHead">
       <Container>
-        {/* <Navbar.Brand href="#home">Navbar</Navbar.Brand> */}
         <Nav className="me-auto">
           <LinkContainer to="/mission">
             <Nav.Link >
@@ -39,9 +38,6 @@ function OverHead() {
             </Nav.Link>
           </LinkContainer>
         </Nav>
-        {/* <marquee className='marque'>
-            श्री सिद्धबाबा इंगलिस बोर्डिगं स्कुल,चापाकोट नगरपालिका-०२ स्याङ्गजा गण्डकी नेपाल |
-        </marquee> */}
         <Nav className="ms-auto">
           <Nav.Item>
             <Nav.Link disabled>{currentDateTime.toLocaleDateString(undefined, options)}</Nav.Link>
