@@ -1,8 +1,16 @@
 
 main {
     min-height: 80vh;
-    /* background-color: #8e9ee8 ; */
+    /* background-color: #8edbe8; */
+    background: repeating-linear-gradient(
+      -45deg, /* Angle of the stripes */
+      #f0dddde3 0, 
+      #ffffff 20px, 
+      #eef0e8 20px, 
+      #c6d5d7 40px /* Adjust color stops and sizes as needed */
+    );
 }
+  
 
 FindUs {
     min-height: 10vh;
