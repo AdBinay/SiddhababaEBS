@@ -23,7 +23,7 @@ function TestHead() {
               <div className=" ml-3 d-flex justify-content-around">
               <LinkContainer to="/">
                 <Nav.Link >
-                  <img className="mr-3" src={schoolinformation.school_logo} alt="SEBSS Logo" width="250" height="250" />
+                  <img className="mr-3 rounded-circle" src={schoolinformation.school_logo} alt="SEBSS Logo" width="250" height="250" />
                 </Nav.Link>
               </LinkContainer>
                 <div className='mt-4'>

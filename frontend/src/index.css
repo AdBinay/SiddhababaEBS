@@ -4,12 +4,13 @@ main {
     /* background-color: #8edbe8; */
     background: repeating-linear-gradient(
       -45deg, /* Angle of the stripes */
-      #f0dddde3 0, 
-      #ffffff 20px, 
-      #eef0e8 20px, 
-      #c6d5d7 40px /* Adjust color stops and sizes as needed */
+      #eaf5f7 0, 
+      #eceded 40px, /* Increase distance between the stripes */
+      #cae9e9 30px, 
+      #f2f3f4 60px /* Adjust color stops and sizes as needed */
     );
-}
+  }
+  
   
 
 FindUs {
