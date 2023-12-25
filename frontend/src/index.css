@@ -2,13 +2,7 @@
 main {
     min-height: 80vh;
     /* background-color: #8edbe8; */
-    background: repeating-linear-gradient(
-      -45deg, /* Angle of the stripes */
-      #eaf5f7 0, 
-      #eceded 40px, /* Increase distance between the stripes */
-      #cae9e9 30px, 
-      #f2f3f4 60px /* Adjust color stops and sizes as needed */
-    );
+    
   }
   
   
@@ -16,3 +10,11 @@ main {
 FindUs {
     min-height: 10vh;
 }
+
+/* background: repeating-linear-gradient(
+      -45deg, 
+      #eaf5f7 0, 
+      #eceded 40px, 
+      #cae9e9 30px, 
+      #f2f3f4 60px 
+    );  */
