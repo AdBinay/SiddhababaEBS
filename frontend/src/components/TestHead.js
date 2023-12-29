@@ -22,7 +22,7 @@ function TestHead() {
   return (
     <>
       {schoolInformation.map((school, index) => (
-        <div key={index} className="row topbar pad-2">
+        <div key={index} className="row topbar pad-2" style={{ marginTop: '10px' }}>
           <div className="col-lg-2 col-md-3 col-sm-4 col-12 d-flex align-items-center">
             <LinkContainer to="/" className="active nav-link">
               <Nav.Link>
@@ -32,7 +32,7 @@ function TestHead() {
                   alt="SEBSS Logo"
                   width="225"
                   height="225"
-                  style={{ margin: '10px' }}
+                  style={{ margin: '5px' }}
                 />
               </Nav.Link>
             </LinkContainer>
@@ -64,7 +64,7 @@ function TestHead() {
                   <small className="text-dark">{school.school_email}</small>
                 </p>
               </li>
-              <li style={{ marginTop: '10px' }}>
+              <li >
                 <i className="fas fa-map-marker-alt fa-lg text-primary"></i>
                 <p>
                   <small className="text-dark">{school.school_address}</small>
