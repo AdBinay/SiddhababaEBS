@@ -32,17 +32,18 @@ function TestHead() {
                   alt="SEBSS Logo"
                   width="225"
                   height="225"
+                  style={{ margin: '10px' }}
                 />
               </Nav.Link>
             </LinkContainer>
           </div>
           <div className="col-lg-8 col-md-6 col-sm-8 col-12 d-flex align-items-center">
             <div className="ml-3">
-              <h1 className="OpenSans-ExtraBold text-uppercase">
+              <h1 className="OpenSans-ExtraBold text-uppercase" style={{ fontSize: '42px' }}>
                 {school.school_name}
               </h1>
-              <p className="OpenSans-ExtraBold text-uppercase">
-                {school.school_motto}
+              <p style={{ fontSize: '24px' }}>
+                <i>{school.school_motto}</i>
               </p>
               <marquee className="marquee">
                 <h2>{school.nepali_name}</h2>
