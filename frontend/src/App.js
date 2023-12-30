@@ -7,7 +7,6 @@ import HomeScreen from "./screens/HomeScreen";
 import FacultyScreen from "./screens/FacultyScreen";
 import GalleryScreen from "./screens/GalleryScreen";
 import FindUs from "./components/ContactUs";
-import OverHead from "./components/OverHead";
 import TestHead from "./components/TestHead";
 import CalendarScreen from "./screens/CalenderScreen";
 // import CurriculamScreen from "./screens/CurriculamScreen";
@@ -21,7 +20,6 @@ function App() {
     <div>
       <Router>
         <TestHead/>
-        <OverHead/>
         <Header />
         <main className="py-3">
           <Container>

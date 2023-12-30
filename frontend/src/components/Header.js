@@ -3,6 +3,7 @@ import { LinkContainer } from "react-router-bootstrap";
 import { Navbar, Nav, Container, Row, Col } from "react-bootstrap";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
+import NavDropdown from 'react-bootstrap/NavDropdown';
 
 function Header() {
   return (
@@ -49,6 +50,27 @@ function Header() {
                   <i className="fa-solid fa-users"></i> Teaching Faculty
                 </Nav.Link>
               </LinkContainer>
+              <NavDropdown
+              id="nav-dropdown-dark-example"
+              title="About us"
+              menuVariant="dark"
+              >
+                <LinkContainer to="/mission">
+                  <Nav.Link >
+                    Our Mission
+                  </Nav.Link>
+                </LinkContainer>
+                <LinkContainer to="/vision">
+                  <Nav.Link >
+                    Our Vision
+                  </Nav.Link>
+                </LinkContainer>
+                <LinkContainer to="/objectives">
+                  <Nav.Link >
+                    Our Objectives
+                  </Nav.Link>
+                </LinkContainer>
+            </NavDropdown>
             </Nav>
             <Form inline className="">
               <Row className="align-items-center">
