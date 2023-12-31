@@ -5,7 +5,7 @@ import axios from 'axios';
 import { useParams } from 'react-router-dom';
 
 function NewsScreen() {
-  const { _id } = useParams(); // Using useParams hook to get the id from URL
+  const { _id } = useParams(); 
 
   const [notice, setNotice] = useState({});
 
@@ -15,12 +15,12 @@ function NewsScreen() {
         const { data } = await axios.get(`/api/notices/${_id}`);
         setNotice(data);
       } catch (error) {
-        // Handle error (e.g., log or show error message)
+
         console.error('Error fetching notice:', error);
       }
     }
     fetchNotice();
-  }, [_id]); // Adding id to dependency array to fetch notice when id changes
+  }, [_id]); 
 
   return (
     <div>
