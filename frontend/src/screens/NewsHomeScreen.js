@@ -2,7 +2,6 @@ import React, {useState , useEffect} from 'react';
 import { Link } from 'react-router-dom';
 import { Row, Col, Card, Button } from 'react-bootstrap';
 import axios from 'axios'
-// import Notice from '../components/Notice';
 
 function NewsHomeScreen() {
   const [notices, setNotices] = useState([]);
