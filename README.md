@@ -1,2 +1,2 @@
 
-Siddhartha EBS website..
+Siddhartha EBS website
